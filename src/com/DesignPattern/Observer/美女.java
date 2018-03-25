@@ -15,7 +15,7 @@ public class 美女 {
 		this.man.add(man);
 	}
 	
-	public String getStatus(){
+	public String 获取美女的恋爱状态(){
 		return this.status;
 	}
 	

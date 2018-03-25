@@ -9,7 +9,7 @@ public class 追求者2 extends 追求者{
 	@Override
 	public void listen() {
 		// TODO Auto-generated method stub
-		System.out.println("追求者2得到消息，美女的状态为"+this.lover.getStatus());
+		System.out.println("追求者2得到消息，美女的状态为"+this.lover.获取美女的恋爱状态());
 	}
 
 }
