@@ -1,19 +1,15 @@
 package com.DesignPattern.Builder;
 
 public abstract class 导演 {
-	private 词语建造者 factory;
+	protected 词语建造者 factory;
 	
 	public 导演(词语建造者 factory){
 		this.factory = factory;
+		this.factory.buidResult();
 	}
 	
-	public String getWord1(){
-		return this.factory.getWord1().getWord();
-	}
-	
-	public String getWord2(){
-		return this.factory.getWord2().getWord();
-	}
-	
-	public abstract String getWord();
+	/*
+	 * 导演角色的职责是，改变构件的建造顺序后，建造出来的产品是不一样的
+	 */
+	public abstract 词 construct();
 }

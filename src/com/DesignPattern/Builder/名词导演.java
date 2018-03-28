@@ -7,10 +7,16 @@ public class 名词导演 extends 导演{
 		// TODO Auto-generated constructor stub
 	}
 
+	/*
+	 * 先构建名词，
+	 * 后构建动词
+	 * 最终构建的是名词对象
+	 */
 	@Override
-	public String getWord() {
+	public 词 construct() {
 		// TODO Auto-generated method stub
-		return this.getWord1()+this.getWord2();
+		this.factory.buidNounWord();
+		this.factory.buidVerbWord();
+		return this.factory.getResult();
 	}
-
 }

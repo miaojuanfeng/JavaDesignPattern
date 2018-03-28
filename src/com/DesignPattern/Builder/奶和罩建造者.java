@@ -1,17 +1,25 @@
 package com.DesignPattern.Builder;
 
-public class 奶和罩建造者 implements 词语建造者 {
+public class 奶和罩建造者 extends 词语建造者 {
 
 	@Override
-	public 词 getWord1() {
+	public void buidNounWord() {
 		// TODO Auto-generated method stub
-		return new 奶();
+		字 nounWord = new 奶();
+		this.word.setNounWord(nounWord.getWord());
 	}
 
 	@Override
-	public 词 getWord2() {
+	public void buidVerbWord() {
 		// TODO Auto-generated method stub
-		return new 罩();
+		字 verbWord = new 罩();
+		this.word.setVerbWord(verbWord.getWord());
+	}
+
+	@Override
+	public 词 getResult() {
+		// TODO Auto-generated method stub
+		return this.word;
 	}
 
 }

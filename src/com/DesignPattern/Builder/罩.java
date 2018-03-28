@@ -1,6 +1,6 @@
 package com.DesignPattern.Builder;
 
-public class 罩 implements 词 {
+public class 罩 implements 字 {
 
 	@Override
 	public String getWord() {

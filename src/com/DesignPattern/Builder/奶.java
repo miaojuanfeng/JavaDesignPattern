@@ -1,6 +1,6 @@
 package com.DesignPattern.Builder;
 
-public class 奶 implements 词 {
+public class 奶 implements 字 {
 
 	@Override
 	public String getWord() {

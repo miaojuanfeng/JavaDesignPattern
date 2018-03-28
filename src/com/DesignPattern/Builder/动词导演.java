@@ -7,10 +7,17 @@ public class 动词导演 extends 导演{
 		// TODO Auto-generated constructor stub
 	}
 
+	/*
+	 * 先构建动词，
+	 * 后构建名词
+	 * 最终构建的是动词对象
+	 */
 	@Override
-	public String getWord() {
+	public 词 construct() {
 		// TODO Auto-generated method stub
-		return this.getWord2()+this.getWord1();
+		this.factory.buidVerbWord();
+		this.factory.buidNounWord();
+		return this.factory.getResult();
 	}
 
 }
